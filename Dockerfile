@@ -1,4 +1,5 @@
-FROM python:2.7.16 build
+FROM python:3.0.01 build
+DOCKER_BUILDKIT=0
 RUN pip install requests
 WORKDIR /app
 COPY . .
